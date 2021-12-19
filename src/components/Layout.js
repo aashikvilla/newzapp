@@ -33,10 +33,9 @@ function Layout() {
         <>
        <Context.Provider value={context}>
        <center>
-           <div className="navbar">
-             
-               <img src="/logo.png" width="40px" style={{paddingRight:'5px'}}/>
-                <div >Newzapp!!</div> 
+           <div className="navbar">               
+               <img src="/logo.png" width="40px" style={{paddingRight:'5px'}}/>               
+                <div >Newzapp!!</div>               
                
             </div>
             </center>
