@@ -9,7 +9,7 @@ function Details(props) {
         <div className="details-container">
             <div className="title" >
                 <h2>{TITLE}</h2>
-                <a href={URL} /*target="_blank"*/> <img src="link.png" alt="go to" style={{padding:'1rem'}}/> </a>
+                <a href={URL} target="_blank"> <img src="link.png" alt="go to" style={{padding:'1rem'}}/> </a>
                 
             </div>
             
