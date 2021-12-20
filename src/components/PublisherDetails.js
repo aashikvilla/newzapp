@@ -1,10 +1,12 @@
 import React,{useContext,useEffect,useState} from 'react'
 import { useParams } from 'react-router'
 import Details from './Details';
-import {Context} from './Layout'
+import {Context} from './Layout';
+import {useNavigate} from 'react-router-dom'
 
 
 function PublisherDetails() {
+    const navigate=useNavigate();
     const {publisher}=useParams();
     const {NewsDetails}=useContext(Context);
 
@@ -14,12 +16,15 @@ function PublisherDetails() {
     useEffect(()=>{
         console.log("NewsDetails",NewsDetails);
         console.log("PUBLISHER",publisher);
-        let n=NewsDetails.filter((n)=>(n.PUBLISHER.split("\\")[0].trim()==publisher));
-        n.sort(function(a,b){
+        let newsList=NewsDetails.filter((n)=>(n.PUBLISHER.split("\\")[0].trim()==publisher));
+        newsList.sort(function(a,b){
             return b.TIMESTAMP-a.TIMESTAMP;
         })
-        console.log(n);
-        setPublisherNews(n);
+        if(newsList.length==0){
+            navigate("/not-found");
+        }
+        console.log(newsList);
+        setPublisherNews(newsList);
 
     },[NewsDetails,publisher])
     return (

@@ -65,7 +65,7 @@
 
 body{
     background-color: url("/");
-    background: linear-gradient(217deg,#ecfff8, #b7bdff);
+    background: linear-gradient(150deg,#9effdb, #b7bdff);
 }
 
 
@@ -138,6 +138,7 @@ body{
   .navbar{
       display: flex;
       justify-content: center;
+      /* background: linear-gradient(#2545fc,rgba(51, 160, 250, 0.8),rgba(51, 160, 250, 0.4),rgba(127, 182, 255, 0.1)); */
     
   }
   .navbar div{

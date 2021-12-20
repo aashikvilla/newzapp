@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react'
+import { Link } from 'react-router-dom';
 import Routing from './Routing';
 
 export const Context = React.createContext();
@@ -33,8 +34,10 @@ function Layout() {
         <>
        <Context.Provider value={context}>
        <center>
-           <div className="navbar">               
-               <img src="/logo.png" width="40px" style={{paddingRight:'5px'}}/>               
+           <div className="navbar">   
+           <Link to="/">           
+               <img src="/logo.png" width="40px" style={{paddingRight:'5px'}}/>   
+               </Link>             
                 <div >Newzapp!!</div>               
                
             </div>
