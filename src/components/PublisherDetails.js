@@ -2,7 +2,7 @@ import React,{useContext,useEffect,useState} from 'react'
 import { useParams } from 'react-router'
 import Details from './Details';
 import {Context} from './Layout'
-import NewDetails from './NewDetails';
+
 
 function PublisherDetails() {
     const {publisher}=useParams();

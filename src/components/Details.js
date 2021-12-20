@@ -16,8 +16,7 @@ function Details(props) {
             <div className="content">
                
                 <p>CATEGORY : {CATEGORY}</p>
-                <p>HOSTNAME : {HOSTNAME}</p>
-              
+                <p>HOSTNAME : {HOSTNAME}</p>              
                 <p>PUBLISHED ON :{date}</p>
                
             </div>
